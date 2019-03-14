@@ -1,4 +1,5 @@
 import sys,sqlite3
+from sqlite3 import Error
 from Ui_Book import * 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
