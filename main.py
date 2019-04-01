@@ -114,9 +114,8 @@ class Mainwindow(QMainWindow):
             conn = sqlite3.connect("Book.db")
             with conn:
                 cur = conn.cursor()
-                cur.execute(sql)
-            result = cur.execute(sql)
-            data = result.fetchall()
+                result = cur.execute(sql)
+                data = result.fetchall()
         except Error as e:
             msg = QMessageBox()
             msg.critical(
